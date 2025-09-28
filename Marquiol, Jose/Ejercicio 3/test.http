@@ -1,0 +1,28 @@
+# Crear materia
+POST http://localhost:3003/subjects
+Content-Type: application/json
+
+{
+  "name": "Programación I"
+}
+
+# Listar materias
+GET http://localhost:3003/subjects
+
+# Crear alumno
+POST http://localhost:3003/students
+Content-Type: application/json
+
+{
+  "student_name": "Gonzalez Pedro",
+  "subject_id": 1,
+  "note1": 8,
+  "note2": 7.5,
+  "note3": 9
+}
+
+# Listar alumnos
+GET http://localhost:3003/students
+
+# Filtrar por materia
+GET http://localhost:3003/students?subject_id=1

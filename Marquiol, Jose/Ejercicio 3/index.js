@@ -1,0 +1,10 @@
+require('dotenv').config();
+const express = require('express');
+const subjectsRouter = require('./routes/subjects');
+const studentsRouter = require('./routes/students');
+const app = express();
+app.use(express.json());
+app.use('/subjects', subjectsRouter);
+app.use('/students', studentsRouter);
+const PORT = process.env.PORT || 3003;
+app.listen(PORT, () => console.log(`Ejercicio 3 - Students API running on port ${PORT}`));
