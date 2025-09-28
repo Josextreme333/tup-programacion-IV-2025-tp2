@@ -1,0 +1,26 @@
+### Crear rectángulo
+POST http://localhost:3001/rectangles
+Content-Type: application/json
+
+{
+  "sideA": 5,
+  "sideB": 3
+}
+
+### Listar
+GET http://localhost:3001/rectangles
+
+### Obtener uno
+GET http://localhost:3001/rectangles/1
+
+### Actualizar
+PUT http://localhost:3001/rectangles/1
+Content-Type: application/json
+
+{
+  "sideA": 10,
+  "sideB": 2
+}
+
+### Borrar
+DELETE http://localhost:3001/rectangles/1
